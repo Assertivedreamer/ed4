@@ -1,0 +1,46 @@
+<h1>Employee Records</h1>
+<div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Employee ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th>Email</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Date Of Birth</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employeeRecord of employeeRecords,let i=index" appHighlight>
+                <td>
+                    <p>{{employeeRecord.id}}</p>
+                </td>
+                <td>
+                    <p>{{employeeRecord.first_name}}</p>
+                </td>
+                <td>
+                    <p>{{employeeRecord.last_name}}</p>
+                </td>
+                <td>
+                    <p>{{employeeRecord.email}}</p>
+                </td>
+                <td>
+                    <p>{{employeeRecord.salary| currency :"INR"}}</p>
+                </td>
+                <td>
+                    <p>{{employeeRecord.dob | date}}</p>
+                    <p>{{employeeRecord.dob | date:"fullDate" | uppercase }}</p>
+                </td>
+            
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer class="fixed-bottom text-center">
+    <p>Author: Shiva<br>
+        <a href=" # ">siva.lomada@mpokket.com</a></p>
+    <p>Edureka Assignment 4</p>
+</footer>

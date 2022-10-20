@@ -1,0 +1,19 @@
+h1{
+    color: rgb(18, 238, 55);
+}
+th{
+    color: rgb(0, 131, 44);
+    background-color: black;
+}
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: rgb(167, 207, 21);
+color: gray;
+text-align: center;
+}
+a{
+    color: black;
+}
